@@ -42,7 +42,7 @@ export function AuthContextProvider(props: AuthContextProviderProps) {
         unsubscribe();
       };
     });
-  }, [user]);
+  }, []);
 
   async function signInWithGoogle() {
     const provider = new GoogleAuthProvider();
